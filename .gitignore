@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+ENV/
+
+# Data & logs
+*.log
+*.csv
+*.parquet
+*.json
+data/
+!data/README.md  # keep folder structure if needed
+
+# Mac OS
+.DS_Store
+
+# VS Code
+.vscode/
