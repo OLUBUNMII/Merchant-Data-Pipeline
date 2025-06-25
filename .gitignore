@@ -29,3 +29,10 @@ data/
 
 # VS Code
 .vscode/
+
+# Word Documents
+.docx
+*.docx
+
+#Images
+*.png

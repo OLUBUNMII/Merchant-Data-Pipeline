@@ -31,7 +31,7 @@ def generate_transactions_batch(n=1000):   #generates 1000 transactions by defau
     #Inject missing values into 1% of the data (10 out 1000)
     for row in random.sample(data, int(0.01 * n)):  
         field = random.choice(["amount", "status", "timestamp"]) #for each 1 of the 10, randomly remove either amount, status or timestamp
-        row[field] = pd.NA #pd.NA = pandas version of None
+        row[field] = pd.NA #pd.NA = pandas version of None89
 
     df = pd.DataFrame(data)  #Puts the list in a table
 
@@ -56,4 +56,4 @@ def generate_transactions_batch(n=1000):   #generates 1000 transactions by defau
 if __name__ == "__main__":
     print("Generating transactions...")
     generate_transactions_batch()
-    print("Done.")
+    print("Done, check 'data/' for 'transaction.csv'")
